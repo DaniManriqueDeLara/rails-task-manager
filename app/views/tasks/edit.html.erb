@@ -1,0 +1,15 @@
+<h2>enter new title</h2>
+
+<h3>enter new details</h3>
+
+<form action="/tasks" method="update">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <label for="title">title: </label>
+  <input type="text" name="task[title]" id="title">
+
+  <label for="details">details: </label>
+  <input type="text" name="task[details]" id="details">
+
+  <input type="submit">
+
+</form>
